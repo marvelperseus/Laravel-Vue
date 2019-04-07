@@ -1,0 +1,30 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# BEGIN-HTACCESS-208514
+# このBEGIN-ENDはヘテムルコントロールパネルから挿入されました。編集しないようにお願いします。
+AuthUserFile /home/users/0/valuelink/web/ortho-manager.com/staging/orthomanager/public/.htpasswd
+AuthGroupFile /dev/null
+AuthName "VL OM Staging"
+AuthType Basic
+require valid-user
+# END-HTACCESS-208514

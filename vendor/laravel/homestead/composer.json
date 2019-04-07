@@ -1,0 +1,38 @@
+{
+    "name": "laravel/homestead",
+    "description": "A virtual machine for web artisans.",
+    "require": {
+        "php": "^7.1",
+        "symfony/console": "~4.0",
+        "symfony/process": "~4.0",
+        "symfony/yaml": "~4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Taylor Otwell",
+            "email": "taylorotwell@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Laravel\\Homestead\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "4.0-dev"
+        }
+    },
+    "bin": [
+        "bin/homestead"
+    ]
+}
