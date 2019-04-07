@@ -47,9 +47,10 @@ We would like to extend our thanks to the following sponsors for helping fund on
 - [We Are The Robots Inc.](https://watr.mx/)
 - [Understand.io](https://www.understand.io/)
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Get Start
+- npm install
+- npm run watch
+- php artisan serve
 
 ## Security Vulnerabilities
 
