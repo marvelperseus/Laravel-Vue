@@ -48,9 +48,12 @@ We would like to extend our thanks to the following sponsors for helping fund on
 - [Understand.io](https://www.understand.io/)
 
 ## Get Start
-- npm install
-- npm run watch
-- php artisan serve
+- Clone this repository and cd into it
+- Run composer install and npm install to download laravel dependencies
+- Run php artisan key:generate to generate a key for the app
+- Set up your database in your .env file and run php php artisan migrate --seed
+- Execute npm run dev to build project assets
+- Execute php artisan serve to run the project in your browser
 
 ## Security Vulnerabilities
 
